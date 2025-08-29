@@ -1,5 +1,3 @@
-
-
 import java.util.*;
 
 public class SistemaArriendo {
@@ -64,25 +62,27 @@ public class SistemaArriendo {
 
     static class Sucursal {
         private String nombre;
-        private List<Equipo> listaEquipos;
+        private Map<Equipo, Integer> inventario;;
 
         public Sucursal(String nombre) {
             this.nombre = nombre;
-            this.listaEquipos = new ArrayList<>();
+            this.inventario = new HashMap<>();
         }
 
         public String getNombre() { return nombre; }
         public void setNombre(String nombre) { this.nombre = nombre; }
 
-        public List<Equipo> getListaEquipos() { return listaEquipos; }
+        public Map<Equipo, Integer> getInventario() { return inventario; }
 
-        public void agregarEquipo(Equipo eq) {
-            listaEquipos.add(eq);
+        public void agregarEquipo(Equipo eq, int cantidad) {
+            inventario.put(eq, inventario.getOrDefault(eq, 0) + cantidad);
         }
-
+        public Integer obtenerCantidad(Equipo eq){
+        	return inventario.getOrDefault(eq, 0);
+        }
         @Override
         public String toString() {
-            return "Sucursal [nombre=" + nombre + ", cantidadEquipos=" + listaEquipos.size() + "]";
+            return "Sucursal [nombre=" + nombre + ", cantidadEquipos=" + inventario.size() + "]";
         }
     }
 
