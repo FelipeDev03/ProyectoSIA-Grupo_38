@@ -41,18 +41,14 @@ Todo está contenido en una sola clase `Sistema.java` que incluye las siguientes
 - Consola o terminal para ejecutar el programa.
 
 
-## ▶️ Cómo ejecutar
+## Cómo ejecutar
 
-1. Guarda el código en un archivo llamado **`Sistema.java`**.
+1. Descomprime el archivo.zip
    
-3. Compila el programa con:
-
-   ```bash
-   javac Sistema.java
-4. Ejecuta el programa con:
+2. Abre Eclipse o algun IDE de Java
    
-     java Sistema
-
+3. Importa el proyecto y ejecuta.
+   
 ## Menú
 
 El menú del programa se verá algo asi:
