@@ -15,8 +15,11 @@ public class Arriendo {
     }
 
     public Cliente getCliente() { return cliente; }
+    public void setCliente(Cliente cliente) { this.cliente = cliente; }
     public Equipo getEquipo() { return equipo; }
+    public void setEquipo(Equipo equipo) { this.equipo = equipo; }
     public Date getFecha() { return fecha; }
+    public void setFecha(Date fecha) { this.fecha = fecha; }
 
     @Override
     public String toString() {

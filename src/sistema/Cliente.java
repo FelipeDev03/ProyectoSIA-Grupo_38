@@ -20,7 +20,7 @@ public class Cliente {
     public String getNombre() { return nombre; }
     public void setNombre(String nombre) { this.nombre = nombre; }
 
-    public List<Arriendo> getArriendos() { return arriendos; }
+    public List<Arriendo> getArriendos() { return new ArrayList<>(arriendos); }
     public void setArriendos(List<Arriendo> arriendos) { this.arriendos = arriendos; }
 
     public void agregarArriendo(Arriendo arriendo) {
@@ -28,9 +28,10 @@ public class Cliente {
     }
 
     // Sobrecarga
-    public void agregarArriendo(Equipo equipo) {
-        Arriendo nuevoArriendo = new Arriendo(this, equipo);
-        this.arriendos.add(nuevoArriendo);
+    public void agregarArriendo(Equipo equipo, int cantidad) {
+        for (int i = 0; i < cantidad; i++) {
+            this.arriendos.add(new Arriendo(this, equipo));
+        }
     }
 
     @Override
