@@ -1,0 +1,13 @@
+Codigo,Nombre,Estado
+EQ001,Martillo,No disponible
+EQ002,Taladro,No disponible
+EQ003,Andamio,No disponible
+EQ004,Betonera,No disponible
+EQ005,Escalera,No disponible
+EQ006,Compresor,No disponible
+EQ007,Generador,No disponible
+EQ008,Carretilla,No disponible
+EQ009,Rotomartillo,Disponible
+EQ010,Desbrozadora,Disponible
+EQ011,Pala,No disponible
+EQ012,Hoz,Disponible
