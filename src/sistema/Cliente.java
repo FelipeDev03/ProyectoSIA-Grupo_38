@@ -26,6 +26,18 @@ public class Cliente {
     public void agregarArriendo(Arriendo arriendo) {
         this.arriendos.add(arriendo);
     }
+    
+    /**
+     * Elimina un arriendo específico de la lista del cliente.
+     * @param arriendo El arriendo a eliminar.
+     * @return true si el arriendo fue encontrado y eliminado, false en caso contrario.
+     */
+    public boolean eliminarArriendo(Arriendo arriendo) {
+        if (arriendo != null) {
+            return this.arriendos.remove(arriendo);
+        }
+        return false;
+    }
 
     // Sobrecarga
     public void agregarArriendo(Equipo equipo, int cantidad) {

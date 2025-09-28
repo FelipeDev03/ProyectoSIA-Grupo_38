@@ -21,6 +21,27 @@ public class Sucursal {
         inventario.put(eq, inventario.getOrDefault(eq, 0) + cantidad);
     }
 
+    /**
+     * Elimina un equipo y todo su stock del inventario.
+     * @param equipo El equipo a eliminar.
+     */
+    public void eliminarEquipo(Equipo equipo) {
+        if (equipo != null) {
+            this.inventario.remove(equipo);
+        }
+    }
+
+    /**
+     * Modifica el stock de un equipo existente a una nueva cantidad.
+     * @param equipo El equipo a modificar.
+     * @param nuevoStock La nueva cantidad de stock (no la diferencia).
+     */
+    public void modificarStockEquipo(Equipo equipo, int nuevoStock) {
+        if (equipo != null && nuevoStock >= 0) {
+            this.inventario.put(equipo, nuevoStock);
+        }
+    }
+    
     // Sobrecarga
     public void agregarEquipo(Equipo eq) {
         agregarEquipo(eq, 1); // stock 1 por defecto

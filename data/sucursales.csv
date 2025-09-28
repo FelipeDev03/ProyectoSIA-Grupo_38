@@ -1,7 +1,7 @@
-Nombre,Direccion,Inventario
-Sucursal Centro,Av. Principal 123
-Sucursal Norte,Calle Secundaria 456
-Sucursal Sur,Avenida Sur 789
-Sucursal Este,Calle Oriente 321,EQ004:1
-Sucursal Oeste,Avenida Poniente 654,EQ005:1
-Sucursal Sureste,Calle Yungay 210
+nombre
+Sucursal Centro
+Sucursal Norte
+Sucursal Sur
+Sucursal Este
+Sucursal Oeste
+Sucursal Sureste
